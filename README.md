@@ -15,3 +15,9 @@ Artinya publisher dan subscriber sama-sama terhubung dengan message broker yang 
 ![Sending and processing event.](https://i.imgur.com/IXNgjpT.png)
 
 Ketika menjalankan subscriber instance menggunakan command cargo run dan kemudian menjalankan publisher menggunakan command yang sama, maka publisher akan mengirimkan 5 message ke message broker dan semua message tersebut akan diterima oleh subscriber
+
+## Monitoring chart based on publisher.
+
+![Monitoring chart based on publisher.](https://i.imgur.com/hHygFsJ.png)
+
+Ketika kita mengeksekusi command cargo run di publisher berkali-kali dalam waktu yang singkat, maka akan terdapat spike pertama seperti yang bisa dilihat di gambar diatas (dalam kasus ini, command cargo run dieksekusi sebanyak 2 kali). Kemudian spike kedua menunjukkan satu message yang diproses oleh RabbitMQ. Ini menggambarkan message rates dari suatu hubungan publisher dan subscriber
