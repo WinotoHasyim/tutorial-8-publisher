@@ -9,3 +9,9 @@ Artinya publisher dan subscriber sama-sama terhubung dengan message broker yang 
 ## Running RabbitMQ as message broker.
 
 ![Running RabbitMQ](https://i.imgur.com/8CWI5b5.png)
+
+## Sending and processing event.
+
+![Sending and processing event.](https://i.imgur.com/IXNgjpT.png)
+
+Ketika menjalankan subscriber instance menggunakan command cargo run dan kemudian menjalankan publisher menggunakan command yang sama, maka publisher akan mengirimkan 5 message ke message broker dan semua message tersebut akan diterima oleh subscriber
